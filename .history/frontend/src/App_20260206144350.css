@@ -1,0 +1,29 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animated Gradient Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    #1e3c72,
+    #2a5298,
+    #6a11cb,
+    #2575fc
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  color: white;
+}
+
+/* Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
